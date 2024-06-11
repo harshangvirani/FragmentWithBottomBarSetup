@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt)
-    alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.navigation.safeargs.kotlin)
 }
@@ -73,18 +72,6 @@ dependencies {
     implementation (libs.androidx.navigation.fragment.ktx)
     implementation (libs.androidx.navigation.ui.ktx)
 
-    //Preferences Datastore
-    implementation (libs.datastore.preferences)
-
-    //Firebase Database
-    implementation(libs.firebase.database)
-    implementation(libs.firebase.auth.ktx)
-
-    //Loading dialog
-    implementation (libs.skydialog)
-
-    //Lottie animation
-    implementation (libs.lottie)
 }
 kapt{
     correctErrorTypes = true
